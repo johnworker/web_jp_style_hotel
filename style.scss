@@ -23,6 +23,7 @@ $color_light_gray: #919191;
 $color_dark_gray: #383838;
 $color-gray: #787878;
 $color-dark_blue: #17222e;
+$color_black: #000000;
 
 * {
     margin: 0;
@@ -49,6 +50,37 @@ $color-dark_blue: #17222e;
         img {
             width: 120px;
             margin: 10px;
+        }
+    }
+
+    .main_text {
+        position: relative;
+        top: -75px;
+        left: 50%;
+        width: 240px;
+        height: 40px;
+
+        .label_text {
+            color: #000;
+            font-size: 20px;
+        }
+    }
+
+    .reserve {
+        position: relative;
+        top: -120px;
+        left: 80%;
+        width: 200px;
+
+        button {
+            padding: 10px;
+            background: $color_white;
+            cursor: pointer;
+
+            &:hover {
+                background: $color_black;
+                color: $color_white;
+            }
         }
     }
 
