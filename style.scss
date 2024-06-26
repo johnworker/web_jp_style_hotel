@@ -41,7 +41,8 @@ $color_black: #000000;
     right: 0;
     height: 7rem;
     z-index: 9999;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
     overflow-y: hidden;
 
     .logo_box {
@@ -169,5 +170,42 @@ $color_black: #000000;
     }
 }
 
-
 // 影片宣傳區
+.video_promo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .background_video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .video_overlay {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
