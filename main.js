@@ -23,7 +23,10 @@ $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 0, // 設置為0取消停頓時間
+    speed: 2000, // 設置過渡速度為2000毫秒，與autoplay速度一致
     arrows: false,
-    dots: false
+    dots: false,
+    cssEase: 'linear', // 使用線性平滑效果
+    pauseOnHover: false
 });
