@@ -10,11 +10,12 @@ $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
     if (scrollTop > 0) {
         $('.header_load').css('background', 'rgba(0, 0, 0, 0)');
+        $('.main_text').fadeOut(); // 當滾動時隱藏
     } else {
         $('.header_load').css('background', '#ffffff');
+        $('.main_text').fadeIn(); // 當回到頂部時顯示
     }
 });
-
 
 // 圖片無限向右滑動
 $('.slider').slick({
