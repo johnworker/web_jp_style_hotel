@@ -30,3 +30,14 @@ $('.slider').slick({
     cssEase: 'linear', // 使用線性平滑效果
     pauseOnHover: false
 });
+
+// 私人別墅宣傳
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    $('.private_villa_section').each(function () {
+        var topDistance = $(this).offset().top;
+        if (topDistance < scrollTop + $(window).height() - 100) {
+            $(this).fadeTo(1000, 1);
+        }
+    });
+});

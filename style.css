@@ -392,6 +392,7 @@ License URI: mit
   padding: 50px 20px;
   text-align: center;
   background-color: #fff;
+  height: 100vh;
 }
 .video_section .video_container {
   position: relative;
@@ -406,4 +407,65 @@ License URI: mit
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   transition: opacity 0.3s ease;
+}
+
+.villa_promo_section {
+  height: 100%;
+  background-color: #383838;
+  overflow: hidden;
+}
+.villa_promo_section .private_villa {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  margin-left: 200px;
+}
+.villa_promo_section .private_villa .villa_text {
+  padding-right: 100px;
+}
+.villa_promo_section .private_villa .villa_text .villa_title {
+  font-size: 60px;
+  color: #ffffff;
+}
+.villa_promo_section .private_villa .villa_text .villa_show {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 30px;
+  display: block;
+}
+.villa_promo_section .private_villa .villa_content {
+  flex: 1;
+}
+.villa_promo_section .private_villa .villa_content .villa_image {
+  flex: 1;
+  border: 0.2px solid white;
+  padding: 10px;
+}
+.villa_promo_section .private_villa .villa_content .villa_image img {
+  width: 100%;
+  height: auto;
+}
+.villa_promo_section .private_villa .villa_content h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.villa_promo_section .private_villa .villa_content p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 2.5;
+  top: 20px;
+}
+.villa_promo_section .private_villa .villa_content .view_detail {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.villa_promo_section .private_villa .villa_content .view_detail:hover {
+  background-color: #555;
 }/*# sourceMappingURL=style.css.map */
