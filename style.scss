@@ -122,9 +122,11 @@ $color_black: #000000;
 
             &.active span:first-child {
                 transform: rotate(45deg) translate(50%, 50%);
+                background: $color_white;
             }
             &.active span:last-child {
                 transform: rotate(-45deg) translate(40%, 0%);
+                background: $color_white;
             }
             &.active span:not(:first-child):not(:last-child) {
                 opacity: 0;

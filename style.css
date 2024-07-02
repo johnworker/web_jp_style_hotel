@@ -96,9 +96,11 @@ License URI: mit
 }
 .header_load .gavn .menu_btn.active span:first-child {
   transform: rotate(45deg) translate(50%, 50%);
+  background: #ffffff;
 }
 .header_load .gavn .menu_btn.active span:last-child {
   transform: rotate(-45deg) translate(40%, 0%);
+  background: #ffffff;
 }
 .header_load .gavn .menu_btn.active span:not(:first-child):not(:last-child) {
   opacity: 0;
