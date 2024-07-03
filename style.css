@@ -557,8 +557,37 @@ License URI: mit
   color: #fff;
 }
 .restaurant_section .restaurant_content .food_img {
-  width: 200px;
-  height: 140px;
+  width: 250px;
+  height: 180px;
   overflow: hidden;
-  margin: 60px 0 0 auto;
+  margin: 100px 0 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.restaurant_section .restaurant_content .food_img img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.new_image_display_section {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+}
+.new_image_display_section .new_image_display_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new_image_display_section .new_image_display_container .new_image_left,
+.new_image_display_section .new_image_display_container .new_image_right {
+  flex: 1;
+  padding: 10px;
+}
+.new_image_display_section .new_image_display_container .new_image_left img,
+.new_image_display_section .new_image_display_container .new_image_right img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
