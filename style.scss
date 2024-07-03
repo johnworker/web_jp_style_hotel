@@ -690,7 +690,7 @@ $color_black: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px 0;
+    margin: 40px 100px;
 
     .experience_content {
         flex: 1;
@@ -709,6 +709,7 @@ $color_black: #000000;
         p {
             font-size: 1rem;
             line-height: 1.6;
+            width: 90%;
         }
     }
 

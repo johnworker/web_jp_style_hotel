@@ -587,7 +587,7 @@ License URI: mit
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 40px 100px;
 }
 .experience_section .experience_content {
   flex: 1;
@@ -604,6 +604,7 @@ License URI: mit
 .experience_section .experience_content p {
   font-size: 1rem;
   line-height: 1.6;
+  width: 90%;
 }
 .experience_section .experience_map {
   flex: 1;
