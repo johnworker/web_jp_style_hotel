@@ -593,7 +593,7 @@ $color_black: #000000;
 
 // 餐廳介紹區
 .restaurant_section {
-    padding: 60px 0;
+    padding: 60px 100px;
     background-color: #f5f5f5;
 
     .restaurant_container {
@@ -607,6 +607,9 @@ $color_black: #000000;
     .restaurant_image {
         flex: 1;
         max-width: 50%;
+        border: solid 0.2px black;
+        padding: 10px;
+
         img {
             width: 100%;
             height: auto;
@@ -618,18 +621,22 @@ $color_black: #000000;
     .restaurant_content {
         flex: 1;
         max-width: 50%;
+        padding: 50px;
+        place-self: baseline;
+
         h2 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
+            font-size: 60px;
+            margin-bottom: 50px;
+            font-family: monospace;
         }
         h3 {
             font-size: 1.5em;
-            margin-bottom: 1em;
+            margin-bottom: 100px;
         }
         p {
             font-size: 1em;
             line-height: 1.6;
-            margin-bottom: 1em;
+            margin-bottom: 100px;
         }
         .view_detail {
             display: inline-block;
@@ -643,6 +650,13 @@ $color_black: #000000;
                 background-color: #000;
                 color: #fff;
             }
+        }
+
+        .food_img {
+            width: 200px;
+            height: 140px;
+            overflow: hidden;
+            margin: 60px 0 0 auto;
         }
     }
 }
