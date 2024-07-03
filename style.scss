@@ -668,28 +668,19 @@ $color_black: #000000;
     }
 }
 
-// 新增圖片展示區
-.new_image_display_section {
-    padding: 20px 0;
-    background-color: #f7f7f7;
+// 新增餐廳內部圖片展示區塊
+.restaurant_interior_section {
+    margin: 40px 0;
 
-    .new_image_display_container {
+    .interior_container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        padding: 10px 0;
+        border: solid 0.2px black;
 
-        .new_image_left,
-        .new_image_right {
-            flex: 1;
-            padding: 10px;
-
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
+        img {
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
 }

@@ -569,25 +569,16 @@ License URI: mit
   height: -webkit-fill-available;
 }
 
-.new_image_display_section {
-  padding: 20px 0;
-  background-color: #f7f7f7;
+.restaurant_interior_section {
+  margin: 40px 0;
 }
-.new_image_display_section .new_image_display_container {
+.restaurant_interior_section .interior_container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 10px 0;
+  border: solid 0.2px black;
 }
-.new_image_display_section .new_image_display_container .new_image_left,
-.new_image_display_section .new_image_display_container .new_image_right {
-  flex: 1;
-  padding: 10px;
-}
-.new_image_display_section .new_image_display_container .new_image_left img,
-.new_image_display_section .new_image_display_container .new_image_right img {
+.restaurant_interior_section .interior_container img {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
