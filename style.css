@@ -615,4 +615,54 @@ License URI: mit
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attraction_section {
+  margin: 40px 0;
+  text-align: center;
+}
+.attraction_section .attraction_slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.attraction_section .attraction_slider .slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.attraction_section .attraction_slider .slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+.attraction_section .attraction_slider .slide .caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.attraction_section .attraction_slider .slide .caption .view_button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.attraction_section .navigation {
+  margin-top: 10px;
+}
+.attraction_section .navigation .prev,
+.attraction_section .navigation .next {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.attraction_section .navigation .counter {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -725,3 +725,62 @@ $color_black: #000000;
         }
     }
 }
+
+// 新增景點展示區塊
+.attraction_section {
+    margin: 40px 0;
+    text-align: center;
+
+    .attraction_slider {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .caption {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+
+                .view_button {
+                    background: #fff;
+                    color: #000;
+                    border: none;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        margin-top: 10px;
+
+        .prev,
+        .next {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .counter {
+            margin: 0 10px;
+        }
+    }
+}

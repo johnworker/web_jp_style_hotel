@@ -41,3 +41,35 @@ $(window).scroll(function () {
         }
     });
 });
+
+
+// 景點展示區塊滑動效果
+let currentSlide = 0;
+const slides = document.querySelectorAll('.attraction_slider .slide');
+const totalSlides = slides.length;
+const prevButton = document.querySelector('.navigation .prev');
+const nextButton = document.querySelector('.navigation .next');
+const counter = document.querySelector('.navigation .counter');
+
+function updateSlide() {
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+    });
+    counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+}
+
+prevButton.addEventListener('click', () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+        updateSlide();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlide();
+    }
+});
+
+updateSlide();
