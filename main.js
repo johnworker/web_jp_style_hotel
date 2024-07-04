@@ -52,23 +52,19 @@ const counter = document.querySelector('.navigation .counter');
 
 function updateSlide() {
     slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+        slide.style.transform = `translateX(${(index - currentSlide) * 100 / 3}%)`;
     });
-    counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+    counter.textContent = `${(currentSlide % totalSlides) + 1} / ${totalSlides}`;
 }
 
 prevButton.addEventListener('click', () => {
-    if (currentSlide > 0) {
-        currentSlide--;
-        updateSlide();
-    }
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+    updateSlide();
 });
 
 nextButton.addEventListener('click', () => {
-    if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateSlide();
-    }
+    currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+    updateSlide();
 });
 
 updateSlide();

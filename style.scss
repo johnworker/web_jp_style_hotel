@@ -722,12 +722,17 @@ $color_black: #000000;
 .attraction_display {
     text-align: center;
     padding: 20px;
+    position: relative;
+    width: 100%;
 
     .attraction_slider {
         display: flex;
         overflow: hidden;
+        position: relative;
+        width: 100%;
 
         .slide {
+            min-width: 33.33%;
             transition: transform 0.5s ease-in-out;
 
             img {
@@ -745,6 +750,9 @@ $color_black: #000000;
 
     .navigation {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .prev,
         .next {
@@ -752,11 +760,45 @@ $color_black: #000000;
             border: none;
             font-size: 18px;
             cursor: pointer;
+            padding: 5px 10px;
+            margin: 0 10px;
         }
 
         .counter {
-            margin-top: 10px;
             font-size: 18px;
+        }
+    }
+}
+
+// 新增服務區塊
+.services_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    height: 100vh;
+
+    .service_circle {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        .service_link {
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        &:hover {
+            background-color: #e0e0e0;
         }
     }
 }
