@@ -42,7 +42,6 @@ $(window).scroll(function () {
     });
 });
 
-
 // 景點展示區塊滑動效果
 let currentSlide = 0;
 const slides = document.querySelectorAll('.attraction_slider .slide');

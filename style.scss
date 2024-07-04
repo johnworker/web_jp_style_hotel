@@ -336,11 +336,12 @@ $color_black: #000000;
 
     .overview_image {
         width: 500px;
+        border: solid 0.2px black;
+        padding: 10px;
 
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
@@ -381,15 +382,6 @@ $color_black: #000000;
             text-decoration: none;
             border-bottom: 1px solid #000;
             padding-bottom: 2px;
-        }
-    }
-
-    .overview_image {
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
 }
@@ -726,61 +718,45 @@ $color_black: #000000;
     }
 }
 
-// 新增景點展示區塊
-.attraction_section {
-    margin: 40px 0;
+// 景點展示區塊
+.attraction_display {
     text-align: center;
+    padding: 20px;
 
     .attraction_slider {
         display: flex;
         overflow: hidden;
-        position: relative;
 
         .slide {
-            min-width: 100%;
             transition: transform 0.5s ease-in-out;
 
             img {
                 width: 100%;
-                border-radius: 10px;
+                height: auto;
+                display: block;
             }
 
             .caption {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                background: rgba(0, 0, 0, 0.6);
-                color: #fff;
-                padding: 5px 10px;
-                border-radius: 5px;
-
-                .view_button {
-                    background: #fff;
-                    color: #000;
-                    border: none;
-                    padding: 5px 10px;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    margin-left: 10px;
-                }
+                font-size: 18px;
+                margin-top: 10px;
             }
         }
     }
 
     .navigation {
-        margin-top: 10px;
+        margin-top: 20px;
 
         .prev,
         .next {
             background: none;
             border: none;
-            font-size: 1rem;
+            font-size: 18px;
             cursor: pointer;
-            padding: 5px 10px;
         }
 
         .counter {
-            margin: 0 10px;
+            margin-top: 10px;
+            font-size: 18px;
         }
     }
 }
