@@ -734,7 +734,7 @@ body {
 .access_section .access_content .access_details ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .access_section .access_content .access_details ul li {
   margin: 5px 0;
@@ -753,6 +753,5 @@ body {
   margin-left: 20px;
 }
 .access_section .access_content .access_map img {
-  width: 100%;
   height: auto;
 }/*# sourceMappingURL=style.css.map */
