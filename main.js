@@ -23,6 +23,7 @@ $(".info_item").click(function () {
     $(this).toggleClass("expanded");
 });
 
+
 // 新增圖片滑動區塊
 // 圖片無限向右滑動
 $('.slider').slick({

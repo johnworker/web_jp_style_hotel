@@ -18,6 +18,10 @@ License URI: mit
   overflow-x: hidden;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 .header_load {
   position: fixed;
   top: 0;
@@ -183,25 +187,32 @@ License URI: mit
 .info_section {
   padding: 50px 0;
   background-color: #f8f8f8;
+  margin: 100px;
+  border-top: solid 0.2px black;
 }
 .info_section .info_content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: flex;
 }
-.info_section .info_content h2 {
+.info_section .info_content .info_title {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-right: 20px;
+}
+.info_section .info_content .info_title h2 {
   font-size: 36px;
-  text-align: left;
-  margin-bottom: 20px;
+  margin: 0;
+}
+.info_section .info_content .info_title span {
+  font-size: 18px;
+  color: #888;
 }
 .info_section .info_content .info_list {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 .info_section .info_content .info_list .info_item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #ccc;
 }
 .info_section .info_content .info_list .info_item .info_date {
@@ -218,16 +229,17 @@ License URI: mit
   font-size: 16px;
   text-align: right;
 }
-.info_section .info_content .view_all {
+.info_section .info_content .info_list .view_all {
   display: block;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   font-size: 18px;
   color: #000;
   text-decoration: none;
   border-bottom: 2px solid #000;
+  width: 70px;
 }
-.info_section .info_content .view_all:hover {
+.info_section .info_content .info_list .view_all:hover {
   color: #555;
   border-bottom: 2px solid #555;
 }
@@ -239,7 +251,6 @@ License URI: mit
 }
 .image_slider .slider {
   width: 80%;
-  margin: 0 auto;
   border: solid 0.2px black;
   padding: 5px;
 }

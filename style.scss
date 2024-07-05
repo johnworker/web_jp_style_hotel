@@ -34,6 +34,10 @@ $color_black: #000000;
     overflow-x: hidden;
 }
 
+body {
+    background-color: #f8f8f8;
+}
+
 .header_load {
     position: fixed;
     top: 0;
@@ -221,26 +225,35 @@ $color_black: #000000;
 .info_section {
     padding: 50px 0;
     background-color: #f8f8f8;
+    margin: 100px;
+    border-top: solid 0.2px black;
 
     .info_content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
+        display: flex;
 
-        h2 {
-            font-size: 36px;
-            text-align: left;
-            margin-bottom: 20px;
+        .info_title {
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+            margin-right: 20px;
+
+            h2 {
+                font-size: 36px;
+                margin: 0;
+            }
+
+            span {
+                font-size: 18px;
+                color: #888;
+            }
         }
 
         .info_list {
-            display: flex;
-            flex-direction: column;
+            flex: 1;
 
             .info_item {
                 display: flex;
                 justify-content: space-between;
-                padding: 10px 0;
+                padding: 20px 0;
                 border-bottom: 1px solid #ccc;
 
                 .info_date {
@@ -260,20 +273,21 @@ $color_black: #000000;
                     text-align: right;
                 }
             }
-        }
 
-        .view_all {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 18px;
-            color: #000;
-            text-decoration: none;
-            border-bottom: 2px solid #000;
+            .view_all {
+                display: block;
+                text-align: left;
+                margin-top: 20px;
+                font-size: 18px;
+                color: #000;
+                text-decoration: none;
+                border-bottom: 2px solid #000;
+                width: 70px;
 
-            &:hover {
-                color: #555;
-                border-bottom: 2px solid #555;
+                &:hover {
+                    color: #555;
+                    border-bottom: 2px solid #555;
+                }
             }
         }
     }
@@ -287,7 +301,6 @@ $color_black: #000000;
 
     .slider {
         width: 80%;
-        margin: 0 auto;
         border: solid 0.2px black;
         padding: 5px;
 
