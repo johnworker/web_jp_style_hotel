@@ -17,6 +17,13 @@ $(window).scroll(function () {
     }
 });
 
+// 信息區
+// 示例：為 info_item 增加點擊效果以顯示更多信息
+$(".info_item").click(function () {
+    $(this).toggleClass("expanded");
+});
+
+// 新增圖片滑動區塊
 // 圖片無限向右滑動
 $('.slider').slick({
     infinite: true,
