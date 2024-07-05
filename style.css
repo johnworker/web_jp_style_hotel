@@ -196,7 +196,7 @@ body {
 .info_section .info_content .info_title {
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  margin-right: 20px;
+  margin-right: 200px;
 }
 .info_section .info_content .info_title h2 {
   font-size: 36px;
@@ -700,4 +700,59 @@ body {
 }
 .services_section .service_circle:hover {
   background-color: #e0e0e0;
+}
+
+.access_section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.access_section .access_content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+}
+.access_section .access_content .access_details {
+  max-width: 600px;
+  text-align: left;
+}
+.access_section .access_content .access_details h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.access_section .access_content .access_details p {
+  font-size: 1.2em;
+}
+.access_section .access_content .access_details a {
+  display: block;
+  margin: 10px 0;
+  color: #000;
+  text-decoration: underline;
+}
+.access_section .access_content .access_details ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.access_section .access_content .access_details ul li {
+  margin: 5px 0;
+}
+.access_section .access_content .access_details .view_detail {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.access_section .access_content .access_map {
+  max-width: 600px;
+  margin-left: 20px;
+}
+.access_section .access_content .access_map img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
