@@ -885,3 +885,49 @@ body {
         }
     }
 }
+
+// 頁尾區
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 20px 0;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        .footer-left {
+            p {
+                margin: 0;
+                line-height: 1.5;
+            }
+        }
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            button {
+                background-color: #fff;
+                color: #000;
+                border: none;
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        a {
+            color: #fff;
+            margin: 5px 10px;
+            text-decoration: none;
+        }
+    }
+    .footer-bottom {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #fff;
+    }
+}

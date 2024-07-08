@@ -754,4 +754,47 @@ body {
 }
 .access_section .access_content .access_map img {
   height: auto;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 20px 0;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+footer .footer-container .footer-left p {
+  margin: 0;
+  line-height: 1.5;
+}
+footer .footer-container .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .footer-right button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .footer-links a {
+  color: #fff;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+footer .footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #fff;
 }/*# sourceMappingURL=style.css.map */
