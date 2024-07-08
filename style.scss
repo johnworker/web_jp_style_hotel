@@ -738,7 +738,6 @@ body {
 
 // 景點展示區塊
 .attraction_display {
-    
     .attraction_slider {
         .slide {
             text-align: center;
@@ -810,6 +809,8 @@ body {
 
     .navigation {
         margin: 0 auto;
+        display: block;
+        width: fit-content;
     }
 }
 

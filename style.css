@@ -690,6 +690,9 @@ body {
 }
 .attraction_display .navigation {
   margin: 0 auto;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .services_section {
