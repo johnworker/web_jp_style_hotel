@@ -51,28 +51,15 @@ $(window).scroll(function () {
 });
 
 // 景點展示區塊滑動效果
-let currentSlide = 0;
-const slides = document.querySelectorAll('.attraction_slider .slide');
-const totalSlides = slides.length;
-const prevButton = document.querySelector('.navigation .prev');
-const nextButton = document.querySelector('.navigation .next');
-const counter = document.querySelector('.navigation .counter');
-
-function updateSlide() {
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${(index - currentSlide) * 100 / 3}%)`;
+$(document).ready(function(){
+    $('.attraction_slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        dots: true,
+        prevArrow: '<button class="slick-prev">＜</button>',
+        nextArrow: '<button class="slick-next">＞</button>'
     });
-    counter.textContent = `${(currentSlide % totalSlides) + 1} / ${totalSlides}`;
-}
-
-prevButton.addEventListener('click', () => {
-    currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
-    updateSlide();
 });
-
-nextButton.addEventListener('click', () => {
-    currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
-    updateSlide();
-});
-
-updateSlide();
