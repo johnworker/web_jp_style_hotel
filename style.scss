@@ -887,47 +887,77 @@ body {
 }
 
 // 頁尾區
-footer {
-    background-color: #4a4a4a;
+.footer {
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    .footer-container {
+    padding: 40px 0;
+
+    .footer_content {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
-        .footer-left {
-            p {
-                margin: 0;
-                line-height: 1.5;
-            }
-        }
-        .footer-right {
-            display: flex;
-            flex-direction: column;
-            button {
-                background-color: #fff;
-                color: #000;
-                border: none;
-                padding: 10px;
-                margin-bottom: 10px;
-                cursor: pointer;
-            }
-        }
-    }
-    .footer-links {
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        a {
-            color: #fff;
-            margin: 5px 10px;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 150px;
+
+        .footer_linker {
+            .footer_nav {
+                hr {
+                    margin: 10px 0;
+                }
+            }
+        }
+        .footer_address,
+        .footer_links,
+        .footer_buttons,
+        .footer_nav,
+        .footer_language {
+            flex: 1 1 20%;
+            margin: 20px 0;
+        }
+
+        .footer_address p,
+        .footer_links a,
+        .footer_nav a {
+            margin: 5px 0;
+        }
+
+        .footer_links a,
+        .footer_nav a,
+        .footer_language a {
+            color: #ccc;
             text-decoration: none;
+            padding: 0 5px;
+        }
+
+        .footer_links a:hover,
+        .footer_nav a:hover,
+        .footer_language a:hover {
+            color: #fff;
+        }
+
+        .footer_buttons .btn {
+            display: block;
+            margin: 5px 30px 5px 0;
+            padding: 10px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 100px;
+            float: left;
+        }
+
+        .footer_buttons .btn:hover {
+            background-color: #777;
         }
     }
-    .footer-bottom {
+
+    .footer_bottom {
         text-align: center;
-        padding: 10px;
-        border-top: 1px solid #fff;
+        padding: 10px 0;
+        border-top: 1px solid #444;
     }
 }
