@@ -299,6 +299,7 @@ body {
   width: 500px;
   border: solid 0.2px black;
   padding: 10px;
+  margin: 0 0 0 auto;
 }
 .overview_section .overview_image img {
   max-width: 100%;
@@ -337,6 +338,9 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #000;
   padding-bottom: 2px;
+  text-align: left;
+  display: block;
+  width: 110px;
 }
 
 .timeline_section {
