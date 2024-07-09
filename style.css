@@ -634,6 +634,7 @@ body {
   margin-left: 150px;
 }
 .attraction_display .attraction_slider .slide {
+  position: relative;
   text-align: center;
   margin: 0 10px 0;
   padding: 10px;
@@ -644,7 +645,12 @@ body {
   height: auto;
 }
 .attraction_display .attraction_slider .slide .caption {
-  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  padding: 5px 10px;
 }
 .attraction_display .slick-prev,
 .attraction_display .slick-next {
@@ -700,11 +706,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.attraction_display .navigation .prev {
-  border: none;
-}
+.attraction_display .navigation .prev,
 .attraction_display .navigation .next {
   border: none;
+  cursor: pointer;
 }
 
 .services_section {
