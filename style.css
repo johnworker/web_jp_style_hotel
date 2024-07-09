@@ -710,6 +710,7 @@ body {
 .attraction_display .navigation .next {
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 .services_section {
