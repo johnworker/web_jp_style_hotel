@@ -477,24 +477,24 @@ body {
 
 // 新增影片播放區塊
 .video_section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
+    position: relative;
+    width: 90%;
     height: 100vh;
+    overflow: hidden;
+    margin: 30px auto;
 
     .video_container {
-        position: relative;
-        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-        .video_overlay {
+        iframe {
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            transition: opacity 0.3s ease;
+            object-fit: cover;
         }
     }
 }
@@ -738,9 +738,7 @@ body {
 
 // 景點展示區塊
 .attraction_display {
-
     .attraction_slider {
-
         .slick-list {
             margin-left: 150px;
         }
@@ -826,7 +824,7 @@ body {
         }
 
         .next {
-            border: none
+            border: none;
         }
     }
 }

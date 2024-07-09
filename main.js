@@ -39,6 +39,8 @@ $('.slider').slick({
     pauseOnHover: false
 });
 
+// 新增影片播放區塊
+
 // 私人別墅宣傳
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
