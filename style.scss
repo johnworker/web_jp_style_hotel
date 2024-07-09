@@ -740,16 +740,22 @@ body {
 .attraction_display {
 
     .attraction_slider {
+
+        .slick-list {
+            margin-left: 150px;
+        }
+
         .slide {
             text-align: center;
-            margin: 0 40px 0 150px;
+            margin: 0 10px 0;
+            padding: 10px;
+            border: solid 0.2px black;
 
             img {
                 width: 100%;
                 height: auto;
             }
             .caption {
-                margin-top: 10px;
                 font-size: 1rem;
             }
         }
@@ -814,6 +820,14 @@ body {
         margin: 0 auto;
         display: block;
         width: fit-content;
+
+        .prev {
+            border: none;
+        }
+
+        .next {
+            border: none
+        }
     }
 }
 

@@ -629,16 +629,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.attraction_display .attraction_slider .slick-list {
+  margin-left: 150px;
+}
 .attraction_display .attraction_slider .slide {
   text-align: center;
-  margin: 0 40px 0 150px;
+  margin: 0 10px 0;
+  padding: 10px;
+  border: solid 0.2px black;
 }
 .attraction_display .attraction_slider .slide img {
   width: 100%;
   height: auto;
 }
 .attraction_display .attraction_slider .slide .caption {
-  margin-top: 10px;
   font-size: 1rem;
 }
 .attraction_display .slick-prev,
@@ -694,6 +698,12 @@ body {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
+}
+.attraction_display .navigation .prev {
+  border: none;
+}
+.attraction_display .navigation .next {
+  border: none;
 }
 
 .services_section {
