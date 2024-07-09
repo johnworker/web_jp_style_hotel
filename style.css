@@ -643,6 +643,8 @@ body {
 .attraction_display .attraction_slider .slide img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .attraction_display .attraction_slider .slide .caption {
   position: absolute;
@@ -696,6 +698,7 @@ body {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  display: none;
 }
 .attraction_display .slick-dots li.slick-active button {
   background-color: #666;

@@ -753,6 +753,7 @@ body {
             img {
                 width: 100%;
                 height: auto;
+                object-fit: cover;
             }
             .caption {
                 position: absolute;
@@ -812,6 +813,7 @@ body {
                 justify-content: center;
                 border-radius: 50%;
                 cursor: pointer;
+                display: none;
             }
 
             &.slick-active button {
