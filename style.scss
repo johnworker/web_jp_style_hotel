@@ -738,9 +738,13 @@ body {
 
 // 景點展示區塊
 .attraction_display {
+    height: 100vh;
+
     .attraction_slider {
         .slide {
             text-align: center;
+            margin: 0 40px 0 150px;
+
             img {
                 width: 100%;
                 height: auto;

@@ -51,8 +51,15 @@ $(window).scroll(function () {
 });
 
 // 景點展示區塊滑動效果
-$(document).ready(function(){
-    $('.attraction_slider').slick({
+$(document).ready(function () {
+    var $slider = $('.attraction_slider');
+
+    $slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.counter').text(i + ' / ' + slick.slideCount);
+    });
+
+    $slider.slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -61,5 +68,19 @@ $(document).ready(function(){
         dots: true,
         prevArrow: '<button class="slick-prev">＜</button>',
         nextArrow: '<button class="slick-next">＞</button>'
+    });
+
+    // 更新頁數計數器
+    $slider.on('afterChange', function (event, slick, currentSlide) {
+        $('.counter').text((currentSlide + 1) + ' / ' + slick.slideCount);
+    });
+
+    // 自訂導航按鈕
+    $('.prev').click(function () {
+        $slider.slick('slickPrev');
+    });
+
+    $('.next').click(function () {
+        $slider.slick('slickNext');
     });
 });
