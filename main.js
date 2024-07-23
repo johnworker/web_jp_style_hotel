@@ -32,7 +32,7 @@ $('.slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0, // 設置為0取消停頓時間
-    speed: 2000, // 設置過渡速度為2000毫秒，與autoplay速度一致
+    speed: 2000, // 設置過渡速度為2000毫秒
     arrows: false,
     dots: false,
     cssEase: 'linear', // 使用線性平滑效果
@@ -84,5 +84,16 @@ $(document).ready(function () {
 
     $('.next').click(function () {
         $slider.slick('slickNext');
+    });
+});
+
+// 新增四季之美區域
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    $('.seasons_beauty_section').each(function () {
+        var topDistance = $(this).offset().top;
+        if (topDistance < scrollTop + $(window).height() - 1) {
+            $(this).fadeTo(100, 1);
+        }
     });
 });
