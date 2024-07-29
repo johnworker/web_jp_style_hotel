@@ -829,7 +829,9 @@ body {
     .navigation {
         margin: 0 auto;
         display: block;
-        width: fit-content;
+        padding-left: 155px;
+        display: flex;
+        // width: fit-content;
 
         .prev,
         .next {
